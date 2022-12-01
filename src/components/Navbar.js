@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../assets/logo.png";
-import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaLinkedin,
-  FaFacebook,
-} from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
 
@@ -95,9 +88,9 @@ const Navbar = () => {
       </ul>
 
       {/* Social icons */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+      <div className="hidden lg:flex fixed flex-col top-[50%] left-0 p-1">
         <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 mb-3">
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="https://www.linkedin.com/in/tesfaye-robelle-4a2b7921a/"
@@ -105,7 +98,7 @@ const Navbar = () => {
               Linkedin <FaLinkedin size={40} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#9b43a9]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#9b43a9] mb-3">
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="https://www.github.com/tdebella/"
@@ -113,24 +106,6 @@ const Navbar = () => {
               rel="noreferrer"
             >
               Github <FaGithub size={40} />
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#3838b0]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="https://facebook.com/tesfayerobelle83"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Facebook <FaFacebook size={40} />
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#cb8664]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="mailto:trobelle@alphaworks.tech/"
-            >
-              Email <HiOutlineMail size={40} />
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#010d1b]">
